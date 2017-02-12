@@ -216,13 +216,13 @@ header {
     -webkit-transition: 0.3s all;
             transition: 0.3s all; }
     .projects-section .project:hover {
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1);
+      -webkit-transform: scale(1.03);
+          -ms-transform: scale(1.03);
+              transform: scale(1.03);
+      overflow: hidden;
       z-index: 10; }
       .projects-section .project:hover .overlay {
-        opacity: 1;
-        overflow: hidden; }
+        opacity: 1; }
         .projects-section .project:hover .overlay h5, .projects-section .project:hover .overlay p {
           -webkit-transform: translate3d(0, 0, 0);
                   transform: translate3d(0, 0, 0); }
