@@ -1,0 +1,40 @@
+.services-section
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 50vh
+  width: 1200px
+  margin: 0 auto
+  flex-wrap: wrap
+  padding: 100px 0
+
+  .service
+    text-align: center
+    width: 300px
+    margin: 30px
+
+    .fa
+      color: $main-color
+      margin-bottom: 20px
+
+    h5
+      color: $gray-dark
+      font-size: $s
+      font-weight: $heavy-weight
+      margin-bottom: 20px
+
+    p
+      font-size: $s
+      color: $gray
+
+
+@media (max-width: 1240px)
+  .services-section
+    width: 100%
+
+@media (max-width: 380px)
+  .services-section
+    .service
+      margin: 20px
+
+

@@ -1,0 +1,25 @@
+.loader
+  position: fixed
+  // background: $light-gray
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 0px
+  right: 0px
+  left: 0px
+  bottom: 0px
+  z-index: 4000
+
+  // .loader-img
+  //   z-index: 4200
+  //   width: 100px
+  //   height: 100px
+
+  .load-text
+    width: 250px
+    font-size: $l
+    // color: $black
+    
+    &:after
+      content: '.'
+      animation: dotted 1s infinite

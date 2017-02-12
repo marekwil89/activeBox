@@ -1,0 +1,117 @@
+nav
+  width: 100%
+  position: fixed
+  transition: 0.3s all
+  z-index: 99
+
+  .wrapper
+    width: 1173px
+    margin: 0 auto
+    display: block
+    border-bottom: 1px solid $gray
+    line-height: 100px
+    transition: 0.3s all
+
+    .logo
+      transform: translateY(10px)
+      
+    .fa-bars
+      float: right
+      display: none
+      line-height: 100px
+      font-size: $b
+      transition: 0.3s all
+      cursor: pointer
+      color: $white
+
+    .menu
+      float: right
+      display: block
+
+      .fa-times
+        display: none
+
+      li
+        list-style-type: none
+        display: inline-block
+        margin-left: 40px
+        text-transform: uppercase
+        
+        a
+          display: block
+          color: $gray
+          font-weight: $heavy-weight
+
+          &:hover
+            color: $white
+
+
+  &.resize
+    background-color: $blue-dark
+
+    .wrapper
+      line-height: 60px
+      border-bottom: none
+
+      .fa-bars
+        line-height: 60px
+
+.clear-both
+  clear: both
+
+@media (max-width: 1200px)
+  nav
+    .wrapper
+      width: 100%
+
+      .menu
+        margin-right: 10px
+      .logo
+        margin-left: 10px
+      .fa-bars
+        margin-right: 10px
+
+@media (max-width: 920px)
+  nav
+    .wrapper
+      position: relative
+
+      .fa-bars
+        display: block
+        z-index: 999
+
+      .menu
+        padding: 0
+        width: 100%
+        background: rgba($gray-dark, 0.97)
+        top: 0
+        bottom: 0
+        left: -100%
+        right: 0
+        position: fixed
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        transition: 0.3s all
+
+        .fa-times
+          cursor: pointer
+          color: $white
+          position: absolute
+          top: 10px
+          right: 10px
+          display: block
+          font-size: $b
+
+        &.opened
+          left: 0
+
+        li
+          line-height: 40px
+          display: block
+          margin: 10px 0
+
+          a
+            color: $white
+            font-size: $m

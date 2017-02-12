@@ -1,0 +1,45 @@
+.team-section
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 120vh
+
+  .member
+    width: 260px
+    margin: 15px
+
+    figure 
+      margin-bottom: 10px
+
+      img
+        width: 100%
+
+    h4
+      font-weight: $medium-weight
+      font-size: $m
+      color: $gray-dark
+      margin-bottom: 10px
+
+    .role
+      font-size: $s
+      color: $main-color
+      margin-bottom: 10px
+
+    p
+      color: $gray-dark
+      font-size: $s
+      margin-bottom: 20px
+
+@media (max-width: 1000px)
+  .team-section
+    margin: 100px 0
+    flex-wrap: wrap
+    .member
+      width: 40%
+
+@media (max-width: 600px)
+  .team-section
+    .member
+      margin: 20px
+      width: 100%
+    figure

@@ -1,0 +1,72 @@
+.projects-section
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  overflow: hidden
+
+  .project
+    width: 25%
+    height: 350px
+    background: #999999
+    outline: 1px solid $white
+    position: relative
+    transition: 0.3s all
+
+    &:hover
+      transform: scale(1.1)
+      z-index: 10
+      .overlay
+        opacity: 1
+        overflow: hidden
+
+        h5, p
+          transform: translate3d(0, 0, 0)
+
+    .overlay
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      opacity: 0
+      transition: 0.3s all
+      background: rgba($main-color, 0.9)
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+
+      h5
+        color: $white
+        font-size: $s
+        font-weight: $heavy-weight
+        transform: translate3d(0, -700%, 0)
+        transition: 0.5s all
+        margin-bottom: 20px
+
+      p
+        color: $white
+        font-size: $s
+        transition: 0.5s all
+        transform: translate3d(0, 700%, 0)
+
+@media (max-width: 1200px)
+  .projects-section
+    .project
+      width: 50%
+
+@media (max-width: 750px)
+  .projects-section
+    .project
+      width: 100%
+
+      &:hover
+        transform: scale(1.0)
+  
+      .overlay
+        opacity: 1
+        background: rgba($gray, 0.5)
+        
+        h5, p
+          font-size: $m
+          transform: translate3d(0, 0, 0)
