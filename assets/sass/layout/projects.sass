@@ -6,24 +6,19 @@
 
   .project
     width: 25%
-    height: 350px
     background: #999999
+    height: 350px
     outline: 1px solid $white
     position: relative
-    transition: 0.3s all
+    overflow: hidden
 
-    &:hover
-      transform: scale(1.03)
-      overflow: hidden
-      z-index: 10
-      .overlay
-        opacity: 1
-        
-
-        h5, p
-          transform: translate3d(0, 0, 0)
+    img
+      transition: 0.3s all
+      width: 100%
+      height: 100%
 
     .overlay
+      transition: 0.3s all
       position: absolute
       top: 0
       bottom: 0
@@ -51,6 +46,16 @@
         transition: 0.5s all
         transform: translate3d(0, 700%, 0)
 
+    &:hover
+      img
+        transform: scale(1.3)
+      .overlay
+        z-index: 50
+        opacity: 1
+        
+        h5, p
+          transform: translate3d(0, 0, 0)
+
 @media (max-width: 1200px)
   .projects-section
     .project
@@ -62,7 +67,8 @@
       width: 100%
 
       &:hover
-        transform: scale(1.0)
+        img
+          transform: scale(1.0)
   
       .overlay
         opacity: 1

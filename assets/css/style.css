@@ -209,24 +209,19 @@ header {
   overflow: hidden; }
   .projects-section .project {
     width: 25%;
-    height: 350px;
     background: #999999;
+    height: 350px;
     outline: 1px solid #FFFFFF;
     position: relative;
-    -webkit-transition: 0.3s all;
-            transition: 0.3s all; }
-    .projects-section .project:hover {
-      -webkit-transform: scale(1.03);
-          -ms-transform: scale(1.03);
-              transform: scale(1.03);
-      overflow: hidden;
-      z-index: 10; }
-      .projects-section .project:hover .overlay {
-        opacity: 1; }
-        .projects-section .project:hover .overlay h5, .projects-section .project:hover .overlay p {
-          -webkit-transform: translate3d(0, 0, 0);
-                  transform: translate3d(0, 0, 0); }
+    overflow: hidden; }
+    .projects-section .project img {
+      -webkit-transition: 0.3s all;
+              transition: 0.3s all;
+      width: 100%;
+      height: 100%; }
     .projects-section .project .overlay {
+      -webkit-transition: 0.3s all;
+              transition: 0.3s all;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -269,6 +264,16 @@ header {
                 transition: 0.5s all;
         -webkit-transform: translate3d(0, 700%, 0);
                 transform: translate3d(0, 700%, 0); }
+    .projects-section .project:hover img {
+      -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+              transform: scale(1.3); }
+    .projects-section .project:hover .overlay {
+      z-index: 50;
+      opacity: 1; }
+      .projects-section .project:hover .overlay h5, .projects-section .project:hover .overlay p {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0); }
 
 @media (max-width: 1200px) {
   .projects-section .project {
@@ -276,7 +281,7 @@ header {
 @media (max-width: 750px) {
   .projects-section .project {
     width: 100%; }
-    .projects-section .project:hover {
+    .projects-section .project:hover img {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
@@ -650,21 +655,5 @@ p, address {
   background-repeat: no-repeat; }
   .config-img.header-img {
     background-image: url("../img/header.jpg"); }
-  .config-img.project1-img {
-    background-image: url("../img/project1.jpg"); }
-  .config-img.project2-img {
-    background-image: url("../img/project2.jpg"); }
-  .config-img.project3-img {
-    background-image: url("../img/project3.jpg"); }
-  .config-img.project4-img {
-    background-image: url("../img/project4.jpg"); }
-  .config-img.project5-img {
-    background-image: url("../img/project5.jpg"); }
-  .config-img.project6-img {
-    background-image: url("../img/project6.jpg"); }
-  .config-img.project7-img {
-    background-image: url("../img/project7.jpg"); }
-  .config-img.project8-img {
-    background-image: url("../img/project8.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
